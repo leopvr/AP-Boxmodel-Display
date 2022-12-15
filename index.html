@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model & Display</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Box Model y Display</h1>
+    </header>
+    <main>
+        <div class="boxModel content-box">
+            <h2>Content Box</h2>
+            <p>
+                Width de la caja mas cualquier borde y/o relleno. <br>
+                <br>
+                width: 400px; <br>
+                border: 5px; <br>
+                padding: 30px; <br>
+                ______________+ <br>
+                470px width <br>
+                (400px (content) + 10px (border) + 60px (padding))
+
+            </p>
+        </div>
+
+        <div class="boxModel border-box">
+            <h2>Border Box</h2>
+            <p>
+                Respeta el width dado a la caja, por lo que el contenido se adapta (restandole el border y padding).
+                <br>
+                <br>
+                width: 400px; <br>
+                border: 5px; <br>
+                padding: 30px; <br>
+                ______________+ <br>
+                400px width <br>
+                (content - 10px (border) - 60px (padding))
+            </p>
+        </div>
+
+        <div class="displayContainer">
+            <a href="#" class="displayInline">Display Inline</a>
+            <a href="#" class="displayInline">Display Inline</a>
+            <a href="#" class="displayInline">Display Inline</a>
+        </div>
+
+        <div class="displayContainer">
+            <a href="#" class="displayBlock">Display Block</a>
+            <a href="#" class="displayBlock">Display Block</a>
+            <a href="#" class="displayBlock">Display Block</a>
+        </div>
+
+        <div class="displayContainer">
+            <a href="#" class="displayInlineBlock">Display Inline-Block</a>
+            <a href="#" class="displayInlineBlock">Display Inline-Block</a>
+            <a href="#" class="displayInlineBlock">Display Inline-Block</a>
+        </div>
+
+        <div class="displayContainer">
+            <a href="#" class="displayNone">Display None</a>
+            <a href="#" class="displayNone">Display None</a>
+            <a href="#" class="displayNone">Display None</a>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: wheat;
+}
+
+/* Documentacion Box Model: https://www.w3schools.com/css/css_boxmodel.asp */
+
+.boxModel{
+    background-color: cadetblue;
+    color: white;
+
+    /*Ancho de la caja*/
+    width: 400px; 
+
+    /*Alto de la caja*/
+    height: 400px; 
+
+    /*Margen entre la caja y las otras cajas*/
+    margin: 50px 50px 50px 50px; 
+
+    /*Borde de la caja, seguido de el estilo y color del mismo*/
+    border: 5px solid brown; 
+
+    /*Espacio entre el contenido y el borde de la caja*/
+    padding: 30px; 
+}
+
+/* Documentacion de Box Sizing: https://developer.mozilla.org/es/docs/Web/CSS/box-sizing */
+
+.content-box{
+    box-sizing: content-box;
+}
+
+.border-box{  
+    box-sizing: border-box; 
+}
+
+
+/* Documentacion de display: https://developer.mozilla.org/es/docs/Web/CSS/display */
+
+.displayContainer{
+    margin-bottom: 20px;
+}
+
+a{
+    background-color: rgb(53, 94, 96);
+    padding: 10px;
+    font-size: large;
+    color: white;
+    border: 2px solid rgb(201, 58, 58);
+    margin: 1px;
+}
+
+.displayInline{
+    /* Los 'a' son elementos inline por defecto, por lo que no es necesario declararselo */
+
+    /* (En linea) Los elementos ocupan su contenido + border y padding */
+    display: inline;
+}
+
+.displayBlock{
+    /* (En Bloque) Los elementos ocupan su contenido+ border y padding */
+    display: block;
+}
+
+.displayInLineBlock{
+    /* (En Linea-Bloque) Los elementos se comportan como un hibrido entre inline y block */
+    display: inline-block;
+}
+
+.displayNone{
+    display: none;
+}
